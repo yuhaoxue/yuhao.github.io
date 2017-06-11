@@ -1,0 +1,117 @@
+/*头部*/
+#header{
+	width: 100%;
+	height: 120px;
+}
+
+.article{
+	background: #F1F2F6;
+	width: 100%;
+}
+.article_box{
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	background: white;
+}
+.article_box>div{
+	width: 780px;
+	margin: 0 auto;
+}
+.article_header,.article_pen{
+	height: 200px;
+}
+/*文章头部*/
+.article_header h1{
+	font-size: 50px;
+	padding-top: 50px;
+}
+.article_header p{
+	font-size: 25px;
+}
+/*文章画笔*/
+.article_box .article_pen{
+	position: relative;
+	text-align: left;
+	height: 150px;
+}
+.article_title{
+	height: 53px;
+	text-align: left;
+	background: url(../images/pen_line_long.png) no-repeat 0 bottom;
+}
+.article_title span{
+	display: block;
+	height: 58px;
+	width: 61px;
+	float: right;
+	background: url(../images/pen_article.png) no-repeat;
+}
+.article_title span:hover{
+	background-position: -61px 0;
+}
+.article_pen p{
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+/*article图片*/
+.article_img{
+	height: 231px;
+}
+/*article底部*/
+.article_footer{
+	height: 350px;
+}
+.like_box{
+	width: 73px;
+	height: 73px;
+	margin: 50px 0 0 320px;
+	overflow: hidden;
+}
+.like_box>div{
+	width: 240px;
+}
+.article_iflike{
+	width: 73px;
+	height: 73px;
+	float: left;
+	background: url(../images/article_iflike.png);
+	cursor: pointer;
+}
+.article_iflike_nomber{
+	height: 35px;
+	width: 135px;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+	background: url(../images/article_iflike_nomberbg.png);
+}
+.like_box:hover{
+	width: 240px;
+	transition: all .5s ease;
+}
+.like_tips_box{
+	position: relative;
+	width: 100%;
+}
+.like_tips{
+	background: #ccc;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 300px;
+	left: 260px;
+	opacity: 0;
+}
+/*底部*/
+#footer{
+	height: 350px;
+}

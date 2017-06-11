@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>用户登录</title>
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<!--WebApp全屏模式   隐藏地址栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta name="format-detection" content="telephone=no"/>
+		<!--告诉设备忽略将页面中的地址识别 -->
+		<meta name="format-detection" content="address=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style>
+			.forgetPsw{
+				position: absolute;
+				right:0;
+				top: 1.68rem;
+				font-size: 0.4rem;
+				background:#f36da0;
+				padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+				border-top-left-radius: 1rem;
+				border-bottom-left-radius: 1rem;
+				box-shadow: 0px 0px 40px #87316a;
+			}
+			.prev_line,.next-line{
+				height: 6rem;
+				background: url(img/line_top.png) no-repeat 3.1rem bottom;
+				background-size: 1px;
+			}
+			.next-line{
+				height: 1rem;
+				background: url(img/line_bottom.png) no-repeat 3.1rem 0;
+				background-size: 1px;
+				padding-top: 0.5rem;
+			}
+			.login_box{
+				font-size: 0.5rem;
+				position: relative;
+				background: url(img/line_middle.png) repeat-y 3.1rem 0;
+				background-size: 1px;
+				padding: 0.4rem 0;
+			}
+			.login_box>div{
+				height: 0.8rem;
+				margin-bottom:1rem;
+			}
+			.login_box>div:last-child{
+				margin-bottom:0;
+			}
+			.login_box>div>*{
+				float: left;
+				line-height: 0.8rem;
+			}
+			.login_box>div>label{
+				width: 2.5rem;
+				text-align: right;
+			}
+			.login_box>div span.circle{
+				display: inline-block;
+				width: 0.8rem;
+				height: 0.8rem;
+				position: relative;
+				margin-left: 0.2rem;
+			}
+			.login_box>div span i.cycle{
+				display: inline-block;
+				width: 0.3rem;
+				height: 0.3rem;
+				background: white;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -0.15rem;
+				margin-top: -0.15rem;
+			}
+			.login_box>div span i.circle_animate{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: white;
+				border-radius: 50%;
+				opacity: 0.5;
+			}
+			.now_input{
+				animation: circleChange 2s ease-out infinite;
+			}
+			@keyframes circleChange{
+				0% {transform: scale(0);opacity: 0.2;}
+				25% {transform: scale(0.2);opacity: 0.3;}
+				50% {transform: scale(0.5);opacity: 0.4;}
+				75% {transform: scale(0.8);opacity: 0.5;}
+				100% {transform: scale(1.5);opacity: 0;}
+			}
+			.login_box>div input{
+				width: 5rem;
+				height: 0.8rem;
+				font-size: 0.44rem;
+				border: none;
+				background: none;
+				color: #fff;
+				margin-left: 0.3rem;
+			}
+			.login_btn{
+				width: 3.48rem;
+				height: 1.18rem;
+				background: #f36da0;
+				font-size: 0.5rem;
+				border-radius: 0.2rem;
+				margin: 1rem auto;
+				text-align: center;
+				line-height: 1.18rem;
+			}
+		</style>
+		<script>
+			function refresh(){
+		    var deviceWidth = document.documentElement.clientWidth;
+				if(deviceWidth>1080){
+				    document.documentElement.style.fontSize=1080/10.8+"px";
+				}else{
+				     document.documentElement.style.fontSize=deviceWidth/10.8+"px";
+				}
+			}
+			refresh();
+			window.onresize=function(){
+				refresh();
+			}
+		</script>
+	</head>
+	<body>
+		<header>用户登录</header>
+		<div class="forgetPsw"><a href="#">找回密码</a></div>
+		<div class="prev_line"></div>
+		<!--登录：账号、密码-->
+		<div class="login_box">
+			<div class="username">
+				<label for="">账号</label>
+				<span class="circle"><i class="cycle"></i><i class="circle_animate"></i></span>
+				<input type="text" placeholder="请在此输入账号"/>
+			</div>
+			<div class="username">
+				<label for="">密码</label>
+				<span class="circle"><i class="cycle"></i><i class="circle_animate"></i></span>
+				<input type="password" placeholder="请在此输入密码"/>
+			</div>
+		</div>
+		<div class="next-line"></div>
+		<!--登录按钮-->
+		<div class="login_btn"><a href="personalCenter.html">登录</a></div>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			$(".login_box").on("focus","input",function(){
+				$(".circle_animate").css("opacity","0");
+				$(this).prev().find(".circle_animate").addClass("now_input");
+			})
+			$(".login_box").on("blur","input",function(){
+				$(".circle_animate").css("opacity","0.5");
+				$(this).prev().find(".circle_animate").removeClass("now_input");
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,279 @@
+/*头部导航*/
+.header_box{
+	width: 100%;
+	height: 120px;
+}
+/*商品主体*/
+section{
+	width: 1240px;
+	margin: 0 auto;
+	position: relative;
+}
+/*放大镜*/
+.mask{
+	width: 100px;
+	height: 100px;
+	background: white;
+	opacity: .5;
+	position: absolute;
+	z-index: 50;
+	display: none;
+}
+.enlarge_box{
+	width: 400px;
+	height: 400px;
+	background: white url(../img/shop/CnQOjVg-ZWiAIlffABamOfDS5bU140.png680x680..JPG) no-repeat;
+	background-size: 1500px 1500px;
+	overflow: hidden;
+	position: absolute;
+	left: 500px;
+	top: 70px;
+	z-index: 50;
+	border: 1px solid;
+	display: none;
+}
+/*商品展示*/
+.link_wrap a{
+	color: #ADADAD;
+}
+.shop_wrap{
+	height: 660px;
+	margin-top: 20px;
+}
+.shop_wrap>div{
+	height: 100%;
+	float: left;
+}
+.img_box{
+	width: 500px;
+}
+.big_img{
+	width: 375px;
+	height: 375px;
+	margin: 0 auto;
+	cursor: pointer;
+	position: relative;
+}
+.big_img img{
+	width: 375px;
+	height: 375px;
+	position: absolute;
+	z-index: 10;
+}
+.big_img img:first-child{
+	z-index: 20;
+}
+.img_box ul{
+	width: 375px;
+	margin: 40px auto 0;
+}
+.img_box ul li{
+	float: left;
+	width: 85px;
+	height: 85px;
+	text-align: center;
+	margin: 0 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+.img_box ul li.img_now{
+	border: 1px solid #ccc;
+}
+.img_box ul li img{
+	width: 75px;
+	height: 75px;
+	margin: 5px 0;
+}
+.message_box{
+	width: 740px;
+}
+.message_box>div{
+	padding-left: 10px;
+	margin: 10px 0;
+	height: 35px;
+	line-height: 35px;
+}
+.message_box>div>*{
+	float: left;
+}
+.message_box>div a{
+	display: block;
+	height: 35px;
+	padding: 0 10px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.message_box>div a.selectNow{
+	border-color: #32A5E7;
+}
+.message_box>div a img{
+	width: 35px;
+	height: 35px;
+	vertical-align: top;
+}
+.message_box>div p i img{
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+.message_box>div>.shopping_car{
+	width: 85px;
+}
+.message_box>div>.shopping_car>*{
+	float: left;
+}
+.message_box>div>.shopping_car>p{
+	width: 55px;
+	height: 40px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.message_box>div>.shopping_car>button{
+	width: 20px;
+	height: 18px;
+	margin-left: 5px;
+	font-size: 18px;
+	line-height: 10px;
+}
+.message_box>div>.shopping_car>button:last-child{
+	margin-top: 6px;
+}
+.message_box>div>a.buy{
+	height: 42px;
+	line-height: 42px;
+	background: #2AC4F6;
+	border: 0;
+	border-radius: 3px;
+	padding: 0 30px;
+	margin: 0 30px;
+	color: white;
+}
+.message_box span{
+	color: #E02B41;
+}
+.message_box>h2{
+	margin-bottom: 10px;
+}
+.message_box .price{
+	width: 100%;
+	height: 55px;
+	background: #F5F5F5;
+	line-height: 55px;
+}
+.message_box .price span{
+	font-size: 30px;
+}
+/*商品详情、规格参数、常见问题*/
+.information_wrap>ul{
+	height: 61px;
+	border-bottom: 1px solid #ccc;
+}
+.information_wrap>ul li{
+	float: left;
+	height: 60px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.information_wrap>ul li h3{
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	border-bottom: 2px solid transparent;
+}
+.information_wrap>ul li h3.now_show{
+	color: #00C3F5;
+	border-color: #00C3F5;
+}
+.information_one{
+	display: none;
+}
+/*规格参数*/
+.information_one table{
+	margin: 30px 0;
+	width: 100%;
+}
+.information_one table thead{
+	background: #F4F5F6;
+}
+.information_one table thead th{
+	text-align: left;
+	padding-left: 30px;
+}
+.information_one table tr{
+	height: 50px;
+}
+.information_one tbody tr td:first-child{
+	text-align: center;
+	width: 300px;
+}
+.information_one tbody tr td:last-child{
+	padding-left: 30px;
+	color: #999999;
+}
+.information_one tbody tr td:last-child p{
+	margin: 15px 0;
+}
+/*常见问题*/
+.information_one>h3{
+	color: #00C3F6;
+	margin: 30px 0;
+}
+.information_one>ul{
+	width: 1080px;
+}
+.information_one>ul li{
+	width: 100%;
+	height: 130px;
+	border-bottom: 1px solid #ccc;
+}
+.information_one>ul li:last-child{
+	border-bottom: 0;
+}
+.information_one>ul li p{
+	height: 50px;
+	line-height: 50px;
+}
+.information_one>ul li p span{
+	font-size: 30px;
+	color: #E5E5E5;
+}
+.information_one>ul li p small{
+	font-size: 15px;
+	color: #999999;
+}
+
+/*隐藏菜单栏*/
+.hidden_message{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	background: rgba(255,255,255,0.8);
+	z-index: 100;
+	border-bottom: 1px solid #ccc;
+	display: none;
+}
+.hidden_message p{
+	text-align: right;
+	padding-right: 70px;
+	font-size: 20px;
+}
+.hidden_message p:first-child{
+	margin-top: 20px;
+}
+.hidden_message p:last-child{
+	font-size: 14px;
+	color: #A3A3A3;
+}
+.hidden_message p span{
+	color: #E34054;
+	font-weight: bold;
+	margin-left: 10px;
+}
+/*底部*/
+.footer_box{
+	width: 100%;
+	height: 430px;
+}

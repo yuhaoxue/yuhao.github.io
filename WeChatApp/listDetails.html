@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>列表详情</title>
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<!--WebApp全屏模式   隐藏地址栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta name="format-detection" content="telephone=no"/>
+		<!--告诉设备忽略将页面中的地址识别 -->
+		<meta name="format-detection" content="address=no"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style>
+			.prev_line,.next-line{
+				height: 2rem;
+				background: url(img/line_top.png) no-repeat 2rem bottom;
+				background-size: 1px;
+			}
+			.next-line{
+				height: 4rem;
+				background: url(img/line_bottom.png) no-repeat 2rem 0;
+				background-size: 1px;
+				padding-top: 0.5rem;
+			}
+			.main{
+				width: 100%;
+				position: relative;
+			}
+			.date_box{
+				width: 2.4rem;
+				font-size: 0.5rem;
+				position: relative;
+				background: url(img/line_middle.png) repeat-y 2rem 0;
+				background-size: 1px;
+				padding: 6rem 0;
+			}
+			.date_box>div{
+				height: 0.8rem;
+				margin-bottom:2rem;
+			}
+			.date_box>div:last-child{
+				margin-bottom:0;
+			}
+			.date_box>div>*{
+				float: left;
+				line-height: 0.8rem;
+			}
+			.date_box>div>p{
+				width: 1.2rem;
+				padding-left: 0.4rem;
+			}
+			.date_box>div span.circle{
+				display: inline-block;
+				width: 0.8rem;
+				height: 0.8rem;
+				position: relative;
+			}
+			.date_box>div span i.cycle{
+				display: inline-block;
+				width: 0.3rem;
+				height: 0.3rem;
+				background: white;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -0.15rem;
+				margin-top: -0.15rem;
+			}
+			.date_box>div span i.circle_animate{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background: white;
+				border-radius: 50%;
+				opacity: 0.5;
+			}
+			.main_right{
+				position: fixed;
+				top: 1.7rem;
+				left: 3rem;
+				margin-left: 0.2rem;
+			}
+			.detail_box{
+				padding: 0.3rem;
+				border-radius: 0.2rem;
+				background: transparent;
+				background-color: rgba(255,255,255,0.2);
+				font-size: 0.45rem;
+				display: none;
+			}
+			.list_box li{
+				margin: 0.6rem 0;
+			}
+			.arrow{
+				border-top: 0.2rem solid transparent;
+				border-right: 0.28rem solid rgba(255,255,255,0.2);
+				border-bottom: 0.2rem solid transparent;
+				left: -0.27rem;
+				top: 50%;
+				position: absolute;
+			}
+			.alter{
+				width:0.85rem;
+		    height:0.65rem;
+		    padding-top:0.9rem;
+		    padding-left:0.7rem;
+		    position: absolute;
+		    bottom:0;
+		    right:0;
+		    background:url(img/alter_bg.png) no-repeat right bottom;
+		    background-size: 100%;
+		    border-radius: 0 0 0.2rem 0;
+		    z-index: 10;
+		    font-size:0.4rem;
+		    color:#fff;
+			}
+		</style>
+		<script>
+			function refresh(){
+		    var deviceWidth = document.documentElement.clientWidth;
+				if(deviceWidth>1080){
+				    document.documentElement.style.fontSize=1080/10.8+"px";
+				}else{
+				     document.documentElement.style.fontSize=deviceWidth/10.8+"px";
+				}
+			}
+			refresh();
+			window.onresize=function(){
+				refresh();
+			}
+		</script>
+	</head>
+	<body>
+		<header><a href="personalCenter.html" style="position: absolute;left: 0.4rem;">返回</a>列表详情</header>
+		<div class="prev_line"></div>
+		<div class="main">
+			<!--历史记录-->
+			<div class="date_box">
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i class="circle_animate"></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+				<div class="list_one">
+					<p>12.8</p>
+					<span class="circle"><i class="cycle"></i><i></i></span>
+				</div>
+			</div>
+			<!--详细内容-->
+			<div class="main_right">
+				<div class="detail_box animated bounceInRight" style="display: block;">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+				<div class="detail_box animated bounceInRight">
+					<div class="list_box">
+						<ul>
+							<li>会员注册手机号:18612252554</li>
+	            <li>体检中心:八一体检中心</li>
+	            <li>姓名:Dalei</li>
+	            <li>性别:男</li>
+	            <li>姓名:Dalei</li>
+	            <li>年龄:27</li>
+	            <li>联系电话:18612252554</li>
+	            <li>预约时间:2015-12-03</li>
+	            <li>体检套餐:成人体检套餐</li>
+	            <li>体检时间:2015-12-10</li>
+	            <li>预约状态:已联系</li>
+						</ul>
+					</div>
+					<div class="arrow"></div>
+					<div class="alter">修改</div>
+				</div>
+			</div>
+		</div>
+		<div class="next-line"></div>
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			$(".date_box").on("click",".list_one",function(){
+				$(".circle i:last-child").removeClass("circle_animate");
+				$(this).find("i:last-child").addClass("circle_animate");
+				var distens = $(this).offset().top - 280;
+        $('body,html').animate({scrollTop: distens+"px"}, 400);
+        $(".detail_box").fadeOut();
+        $(".detail_box").eq($(this).index()).fadeIn();
+			})
+		</script>
+	</body>
+</html>
+

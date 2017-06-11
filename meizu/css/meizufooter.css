@@ -1,0 +1,87 @@
+/*底部*/
+footer{
+	height: 430px;
+	width: 100%;
+	background: #FAFAFC;
+}
+footer>div{
+	width: 1240px;
+	margin: 0 auto;
+}
+.foot_top{
+	height: 130px;
+	border-bottom: 1px solid #ccc;
+}
+.foot_top ul{
+	height: 100%;
+	width: 100%;
+}
+.foot_top ul li{
+	height: 100%;
+	width: 200px;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+	margin: 0 3px;
+	position: relative;
+}
+.foot_top ul li:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 43px;
+	height: 44px;
+	border: 1px solid #E5E5E5;
+}
+.foot_top ul li:last-child:after{
+	border: 0;
+}
+.foot_center{
+	height: 180px;
+	border-bottom: 1px solid #ccc;
+}
+.foot_center ul{
+	height: 100%;
+	width: 248px;
+	padding-top: 30px;
+	float: left;
+	text-align: center;
+}
+.foot_center ul li a{
+	font-size: 13px;
+}
+.foot_center ul li a:hover{
+	color: dodgerblue;
+	text-decoration: none;
+}
+.service{
+	float: left;
+	height: 100%;
+	width: 248px;
+	text-align: center;
+	padding-top: 30px;
+}
+.service h2{
+	margin: 10px 0;
+	color: #1FA7EC;
+}
+.service div{
+	width: 160px;
+	height: 35px;
+	margin: 0 auto;
+	border-radius: 3px;
+	background: #1FA7EA;
+	color: white;
+	line-height: 35px;
+}
+.service div:hover{
+	background: #4DCFF6;
+}
+.foot_bottom{
+	height: 120px;
+}
+.foot_bottom p{
+	float: left;
+	margin: 30px 30px;
+	font-size: 15px;
+}

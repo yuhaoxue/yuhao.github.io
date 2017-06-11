@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.f_left{
+	float: left;
+}
+/*返回顶部*/
+.go_top{
+	position: fixed;
+	z-index: 999;
+	height: 160px;
+	width: 87px;
+	right: 20px;
+	bottom: 200px;
+	display: none;
+}
+.go_top .scroll_top{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 20px;
+	cursor: pointer;
+	background: url(../images/scroll_top_bg.png) no-repeat;
+}
+.go_top .scroll_top:hover{
+	background-position: 0 -50px;
+	transition: all .5s ease;
+}
+.go_top .fixed_contact{
+	width: 87px;
+	height: 87px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+	background: url(../images/fixed_contactus.png) no-repeat right 0;
+}
+.go_top .fixed_contact:hover{
+	width: 235px;
+	transition: all .5s ease;
+}

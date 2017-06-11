@@ -1,0 +1,64 @@
+/*网页头部*/
+header{
+	height: 120px;
+	width: 100%;
+	font-size: 14px;
+}
+.head_top{
+	height: 40px;
+	background: #FAFAFC;
+}
+.head_top ul:first-child{
+	float: left;
+	margin-left: 46px;
+	margin-bottom: 0;
+}
+.head_top ul:last-child{
+	float: right;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+.head_top ul li{
+	float: left;
+	margin: 0 10px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.head_top ul li a:hover{
+	color: #1E90FF;
+	text-decoration: none;
+}
+.header_bottom{
+	height: 80px;
+}
+.header_bottom>div{
+	float: left;
+}
+.logo{
+	height: 100%;
+	width: 230px;
+	margin-left: 55px;
+}
+.logo img{
+	margin-top: 30px;
+}
+.header_nav{
+	margin:0;
+	height: 100%;
+}
+.header_nav ul{
+	margin:0;
+	height: 100%;
+}
+.header_nav ul li{
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 80px;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.header_nav ul li:hover{
+	color: #3DB1FA;
+}

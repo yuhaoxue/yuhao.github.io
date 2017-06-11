@@ -1,0 +1,82 @@
+.list{
+	width: 100%;
+	background: #F1F2F6;
+}
+.list_box{
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.list_header,.list_pen{
+	height: 200px;
+}
+/*列表头部*/
+.list_header h1{
+	font-size: 50px;
+	padding-top: 50px;
+}
+.list_header p{
+	font-size: 25px;
+}
+/*列表画笔*/
+.list_pen{
+	height: 53px;
+	text-align: left;
+	margin-bottom: 50px;
+	background: url(../images/pen_line_long.png) no-repeat 0 bottom;
+}
+.list_pen span{
+	display: block;
+	height: 58px;
+	width: 61px;
+	float: right;
+	background: url(../images/pen_list.png) no-repeat;
+}
+.list_pen span:hover{
+	background-position: -61px 0;
+}
+.list_content{
+	width: 1130px;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.content_one{
+	width: 513px;
+	height: 202px;
+	padding: 36px 0 0 20px;
+	margin: 0 20px 30px 0;
+	background: white;
+	float: left;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.content_one:hover{
+	border-color: black;
+	transform: translateY(-6px);
+}
+.content_one>div{
+	float: left;
+}
+.img_box{
+	width: 260px;
+	height: 168px;
+	margin-right: 17px;
+}
+.text_box{
+	width: 221px;
+	text-align: left;
+}
+.text_box p{
+	margin-top: 10px;
+}
+.list_btn{
+	width: 58px;
+	height: 58px;
+	margin: 0 auto;
+	cursor: pointer;
+	background: url(../images/lis_more_btn_bg.png) 0 bottom;
+}
+.list_btn:hover{
+	background-position: 0 0;
+	transition: all .5s ease;
+}

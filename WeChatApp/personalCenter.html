@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<!--WebApp全屏模式   隐藏地址栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<!--告诉设备忽略将页面中的数字识别为电话号码 -->
+		<meta name="format-detection" content="telephone=no"/>
+		<!--告诉设备忽略将页面中的地址识别 -->
+		<meta name="format-detection" content="address=no"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style>
+			.modifiPsw{
+				position: absolute;
+				right:0;
+				top: 1.68rem;
+				font-size: 0.4rem;
+				background:#f36da0;
+				padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+				border-top-left-radius: 1rem;
+				border-bottom-left-radius: 1rem;
+				box-shadow: 0px 0px 40px #87316a;
+				z-index: 90;
+			}
+			.content_box{
+				margin-top: 2.4rem;
+				padding: 0 0.4rem;
+			}
+			.content_box>*{
+				margin-bottom: 0.4rem;
+			}
+			.content_side{
+				height: 5.12rem;
+			}
+			.content_one{
+				width: 4.8rem;
+				height: 100%;
+				float: left;
+				background: transparent;
+				background-color: rgba(255,255,255,0.3);
+				border-radius: 0.2rem;
+				text-align: center;
+			}
+			.content_one:last-child{
+				margin-left: 0.4rem;
+			}
+			.content_one img{
+				margin-top: 0.2rem;
+			}
+			.content_one img:first-child{
+				width: 2.8rem;
+			}
+			.content_one p{
+				font-size: 0.5rem;
+			}
+			.content_one img:last-child{
+				width: 0.92rem;
+			}
+			.content_center{
+				height: 4.35rem;
+				background: transparent;
+				background-color: rgba(255,255,255,0.3);
+				border-radius: 0.2rem;
+				text-align: center;
+				margin-bottom: 0.4rem;
+			}
+			.content_center>*{
+				float: left;
+				height: 100%;
+			}
+			.content_center>div:first-child{
+				width: 60%;
+				text-align: right;
+			}
+			.content_center>div:first-child img{
+				height: 4.35rem;
+			}
+			.content_center>div:last-child{
+				width: 40%;
+				margin-left: -0.5rem;
+				line-height: 1.8rem;
+			}
+			.content_center>div:last-child img{
+				width: 0.92rem;
+			}
+			.content_center>div:last-child p{
+				font-size: 0.5rem;
+			}
+		</style>
+		<script>
+			function refresh(){
+		    var deviceWidth = document.documentElement.clientWidth;
+				if(deviceWidth>1080){
+				    document.documentElement.style.fontSize=1080/10.8+"px";
+				}else{
+				     document.documentElement.style.fontSize=deviceWidth/10.8+"px";
+				}
+			}
+			refresh();
+			window.onresize=function(){
+				refresh();
+			}
+		</script>
+	</head>
+	<body>
+		<header>个人中心</header>
+		<div class="modifiPsw"><a href="changePassword.html">修改密码</a></div>
+		<div class="content_box">
+			<div class="content_side">
+				<div class="content_one animated flipInX" onclick="window.open('appEnter.html','_self')">
+					<img src="img/VIPimage01.png"/>
+					<p>健康体检预约</p>
+					<img src="img/appointment_icon.png"/>
+				</div>
+				<div class="content_one animated flipInX" style="animation-delay:0.1s">
+					<img src="img/VIPimage02.png"/>
+					<p>专家诊疗预约</p>
+					<img src="img/appointment_icon.png"/>
+				</div>
+			</div>
+			<div class="content_center animated flipInX" style="animation-delay:0.2s">
+				<div>
+					<img src="img/VIPimage03.png"/>
+				</div>
+				<div>
+					<p>华西通道预约</p>
+					<img src="img/appointment_ icon_on.png"/>
+				</div>
+			</div>
+			<div class="content_side">
+				<div class="content_one animated flipInX" style="animation-delay:0.3s">
+					<img src="img/VIPimage04.png"/>
+					<p>住院关怀预约</p>
+					<img src="img/appointment_icon.png"/>
+				</div>
+				<div class="content_one animated flipInX" style="animation-delay:0.4s" onclick="window.open('conDetail.html','_self')">
+					<img src="img/VIPimage05.png"/>
+					<p>消费明细查询</p>
+					<img src="img/search_icon.png"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

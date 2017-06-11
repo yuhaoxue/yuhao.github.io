@@ -1,0 +1,367 @@
+/*html{
+	height: 100%;
+	overflow-y: hidden;
+}
+body{
+	width: 105%;
+	height: 100%;
+	overflow: auto;
+}*/
+/*头部*/
+header{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background: url(../images/aboutxiaoniao/beader_bg.jpg) no-repeat;
+}
+.header{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+}
+.xiaoniao_logo{
+	width: 132px;
+	float: left;
+}
+.xiaoniao_nav{
+	height: 80%;
+	float: left;
+	margin-left: 40px;
+	padding-top: 5px;
+}
+.xiaoniao_nav li{
+	float: left;
+	height: 100%;
+}
+.xiaoniao_nav li a{
+	display: block;
+	color: #aeabb4;
+	font-size: 16px;
+	line-height: 40px;
+	padding: 0 15px;
+	height: 100%;
+}
+.xiaoniao_nav li.now a{
+	color: #fff;
+	background: url(../images/nav_now_bg.png) no-repeat center bottom;
+}
+.xiaoniao_nav li a:hover{
+	color: #fff;
+	background: url(../images/nav_now_bg.png) no-repeat center bottom;
+	transition: all .5s ease;
+}
+/*主体内容*/
+.xiaoniao_main{
+	position: absolute;
+	width: 100%;
+}
+.x_box{
+	position: relative;
+	height: 620px;
+	width: 100%;
+}
+/*第一页*/
+.welcome_content{
+	background: #221236;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+}
+.welcome_content>img{
+	background: #221236;
+	color: #fff;
+	text-align: center;
+}
+.welcome_content>img+div{
+	position: relative;
+	top: -35px;
+}
+.welcome_content h1{
+	height: 60px;
+	font-size: 40px;
+	line-height: 60px;
+}
+.welcome_content p{
+	font-size: 20px;
+}
+.welcome_content h1 img:first-child{
+	vertical-align: top;
+}
+.welcome_content h1 img:last-child{
+	vertical-align: bottom;
+}
+.donext{
+	width: 58px;
+	height: 58px;
+	margin: -20px auto 0;
+	background: url(../images/aboutxiaoniao/donext.png) no-repeat 0 -58px;
+}
+.donext:hover{
+	background-position: 0 0;
+	transition: all .5s ease;
+}
+/*概述*/
+.goleft,.goright{
+	width: 58px;
+	height: 58px;
+	top: 45%;
+	position: absolute;
+	cursor: pointer;
+}
+.goleft{
+	left: 30px;
+	background: url(../images/aboutxiaoniao/goleft.png) no-repeat;
+}
+.goleft:hover{
+	background-position: -58px 0;
+	transition: all .5s ease;
+}
+.goright{
+	right: 30px;
+	background: url(../images/aboutxiaoniao/goright.png) no-repeat -58px 0;
+}
+.goright:hover{
+	background-position: 0 0;
+	transition: all .5s ease;
+}
+.gaishu_content{
+	width: 1000px;
+	height: 100%;
+	margin: 20px auto 0;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.gaishu_content>ul{
+	width: 3000px;
+	height: 100%;
+	position: absolute;
+}
+.gaishu_content>ul>li{
+	width: 1000px;
+	height: 100%;
+	float: left;
+}
+.content1 h1{
+	font-size: 50px;
+}
+.content1 .shuomin{
+	width: 700px;
+	height: 100px;
+	margin: 20px auto;
+}
+.shuomin>*{
+	float: left;
+}
+.shuomin>img:first-child{
+	margin-top: 0;
+}
+.shuomin>img:last-child{
+	margin-top: 80px;
+}
+.content1 .shuomin p{
+	width: 650px;
+	line-height: 25px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.img_box img{
+	margin: 0 20px;
+}
+.content2 ul{
+	width: 700px;
+	margin: 0 auto;
+}
+.content2 ul li{
+	width: 700px;
+	height: 100px;
+	margin-top: 60px;
+}
+.content2 ul li>*{
+	float: left;
+}
+.content2 ul li>span{
+	display: block;
+	width: 98px;
+	height: 99px;
+	margin-right: 50px;
+}
+.content2 ul li>h1{
+	margin-top: 20px;
+}
+.content3 .shuomin{
+	font-size: 40px;
+	width: 400px;
+	height: 50px;
+	margin: 50px auto;
+}
+.content3 .shuomin img:last-child{
+	margin-top: 30px;
+}
+.content3>p{
+	width: 750px;
+	margin: 0 auto 100px;
+	line-height: 30px;
+	text-align: left;
+}
+/*小鸟价值*/
+.x_jiazhi{
+	background: #221236;
+	color: white;
+	text-align: center;
+}
+.x_jiazhi h1{
+	font-size: 50px;
+	margin-bottom: 80px;
+	padding-top: 50px;
+}
+.jiazhi_content{
+	width: 970px;
+	margin: 0 auto;
+}
+.border{
+	width: 100%;
+	height: 20px;
+}
+.border>div{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.border>div:last-child{
+	float: right;
+}
+.border>div img:last-child{
+	animation:flash 2s linear infinite;
+}
+@keyframes flash{
+	0%{opacity: 0}
+	50%{opacity: 1}
+	100%{opacity: 0}
+}
+.border>div img{
+	position: absolute;
+}
+.contents{
+	width: 820px;
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.contents_one{
+	width: 410px;
+	height: 74px;
+	margin-bottom: 60px;
+	float: left;
+}
+.contents_one p{
+	width: 300px;
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.nomber{
+	width: 74px;
+	height: 74px;
+	line-height: 74px;
+	float: left;
+	background: url(../images/aboutxiaoniao/jiazhi_quanquan.png) no-repeat;
+}
+/*小鸟掌云*/
+.x_yun{
+	background: #F1F2F6;
+}
+.x_yun h1{
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+}
+.yun_content{
+	width: 920px;
+	height: 360px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/aboutxiaoniao/xuxian_bg.png);
+}
+.yun_content ul{
+	width: 1840px;
+	position: absolute;
+}
+.yun_content ul li{
+	width: 920px;
+	float: left;
+}
+.yun_content ul li p{
+	width: 100%;
+	line-height: 36px;
+}
+.yun_btn{
+	width: 180px;
+	height: 8px;
+	margin: 50px auto 0;
+}
+.yun_btn>div{
+	width: 78px;
+	height: 8px;
+	float: left;
+	border-radius: 4px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/aboutxiaoniao/xiaoniaoyun_btn.png) no-repeat 0 -8px;
+}
+.yun_btn .yun_btn_right{
+	float: right;
+}
+.yunmove_btn{
+	width: 78px;
+	height: 8px;
+	left: -78px;
+	display: block;
+	position: absolute;
+	background: url(../images/aboutxiaoniao/xiaoniaoyun_btn.png) no-repeat 0 0;
+	transition: all .5s ease;
+}
+.yunmove_btn.now{
+	left: 0;
+	cursor: default;
+	transition: all .5s ease;
+}
+/*app下载与联系方式*/
+.app_contacts{
+	background: url(../images/aboutxiaoniao/app&contacts_bg.gif) no-repeat center center;
+}
+.app{
+	color: white;
+	height: 400px;
+}
+.app h1{
+	float: left;
+	margin-top: 180px;
+	margin-left: 50px;
+}
+.app_img{
+	width: 317px;
+	height: 315px;
+	text-align: center;
+	float: left;
+	margin-top: 50px;
+	margin-left: 200px;
+	background: url(../images/aboutxiaoniao/app_downcode.png) no-repeat;
+}
+.contacts{
+	margin-left: 550px;
+}
+.contacts h1{
+	height: 70px;
+	line-height: 70px;
+	background: url(../images/aboutxiaoniao/contacts_line.png) no-repeat 0 bottom;
+}
+.contacts p{
+	height: 30px;
+	line-height: 30px;
+}

@@ -1,0 +1,30 @@
+footer{
+	height: 350px;
+	background: url(../images/yinyue_bg.jpg) no-repeat;
+}
+footer ul{
+	width: 600px;
+	height: 57px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+footer ul li{
+	float: left;
+	width: 57px;
+	height: 57px;
+	margin: 0 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+footer ul li:hover{
+	background-position: 0 -57px !important;
+}
+.shenmin{
+	width: 1100px;
+	margin: 0 auto;
+	border-top: 2px dashed #9890a2;
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 100px;
+}

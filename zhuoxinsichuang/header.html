@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>北京卓新思创科技有限公司</title>
+		<link type="text/css" rel="stylesheet" href="css/animate.css"/>
+		<link type="text/css" rel="stylesheet" href="css/common.css"/>
+		<link type="text/css" rel="stylesheet" href="css/header.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/move.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".nav_list").find("li").hover(function(){
+					$(this).find("ul").stop().slideDown(600,"elasticOut");
+				},function(){
+					$(this).find("ul").stop().slideUp(100);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--网页头部:logo和nav-->
+		<header>
+			<!--网页头部logo-->
+			<div class="logo f_left">
+				<img src="images/logo.png"/>
+			</div>
+			<!--网页头部导航nav-->
+			<div class="nav f_left">
+				<ul class="nav_list">
+					<li class="f_left">
+						<a href="#">首页</a>
+					</li>
+					<li class="f_left">
+						<a href="#">小鸟掌学<span></span></a>
+						<ul>
+							<li class="rubberBand"><a href="#">小鸟掌学主页</a></li>
+							<li><a href="#">小鸟掌学概述</a></li>
+							<li><a href="#">对企业的价值</a></li>
+							<li><a href="#">小鸟掌云</a></li>
+							<li><a href="#">微课联盟</a></li>
+							<li><a href="#">App下载</a></li>
+						</ul>
+					</li>
+					<li class="f_left">
+						<a href="#">小鸟动态</a>
+					</li>
+					<li class="f_left">
+						<a href="#">企业文化<span></span></a>
+						<ul>
+							<li><a href="#">公司理念</a></li>
+							<li><a href="#">公司文化</a></li>
+							<li><a href="#">公司氛围</a></li>
+						</ul>
+					</li>
+					<li class="f_left">
+						<a href="#">人力资源<span></span></a>
+						<ul>
+							<li><a href="#">人才理念</a></li>
+							<li><a href="#">团队介绍</a></li>
+							<li><a href="#">招聘信息</a></li>
+						</ul>
+					</li>
+					<li class="f_left">
+						<a href="#">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</body>
+</html>

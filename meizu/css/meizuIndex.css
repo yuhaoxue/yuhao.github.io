@@ -1,0 +1,296 @@
+/*头部样式：logo、导航*/
+header{
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+.head_wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 90;
+}
+.logo{
+	width: 115px;
+	height: 100%;
+	margin-left: 50px;
+	float: left;
+}
+.logo img{
+	margin-top: 30px;
+}
+
+.nav_wrap{
+	width: 1000px;
+	height: 100%;
+	float: right;
+}
+.nav_list{
+	width: 100%;
+	height: 100%;
+}
+.nav_list>li{
+	height: 100%;
+	width: 100px;
+	float: left;
+	text-align: center;
+	line-height: 80px;
+}
+.nav_list>li:last-child{
+	height: 100%;
+	width: 60px;
+	border: 1px;
+	position: relative;
+}
+.nav_list>li:last-child:hover{
+	background-color: white;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+.nav_list>li:last-child:hover .login_wrap{
+	display: block;
+}
+/*用户登录、注册*/
+.login_wrap{
+	width: 155px;
+	height: 175px;
+	background-color: white;
+	position: absolute;
+	top: 80px;
+	right: 0;
+	display: none;
+}
+.login_wrap .login_btn{
+	width: 115px;
+	height: 32px;
+	margin: 20px auto;
+	background: #3DB1FA;
+	color: white;
+	line-height: 32px;
+	text-align: center;
+	font-size: 15px;
+}
+.login_wrap p{
+	width: 115px;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 30px;
+	font-size: 12px;
+}
+.login_wrap p span{
+	color: #3DB1FA;
+}
+.login_wrap p a:hover{
+	color: #3DB1FA;
+}
+.nav_list>li a{
+	width: 100%;
+	display: block;
+}
+.nav_list>li a:hover{
+	color: dodgerblue;
+}
+/*隐藏的导航栏*/
+.nav_one{
+	width: 1039px;
+	height: 120px;
+	top: 80px;
+	left: 0;
+	padding-left: 310px;
+	background: white;
+	position: absolute;
+	display: none;
+	overflow: hidden;
+}
+.nav_one li{
+	width: 100px;
+	height: 100%;
+	text-align: center;
+	font-size: 13px;
+	line-height: 30px;
+	float: left;
+	margin-right: 60px;
+	position: relative;
+}
+.nav_one li:last-child{
+	margin-right: 0;
+}
+.nav_one li p{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+/*轮播*/
+.banner_wrap{
+	width: 1349px;
+	height: 760px;
+	overflow: hidden;
+	position: relative;
+}
+.banner_list{
+	height: 100%;
+	position: absolute;
+}
+.banner_list li{
+	width: 1349px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.banner_list li img{
+	margin-left: -605px;
+}
+.move_icon{
+	height: 14px;
+	width: 170px;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -85px;
+	z-index: 50;
+}
+.move_icon span{
+	display: block;
+	width: 10px;
+	height: 14px;
+	margin: 0 12px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(../img/icon-circle_a1102e1.png) no-repeat -38px 0;
+}
+.move_icon span.icon_now{
+	width: 14px;
+	margin: 0 10px;
+	background-position: 0 0;
+}
+/**/
+.content_wrap{
+	height: 300px;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.content_list{
+	height: 100%;
+	width: 100%;
+}
+.content_list li{
+	height: 100%;
+	width: 448px;
+	float: left;
+	overflow: hidden;
+}
+.content_list li:nth-child(2){
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.content_list li img{
+	margin-left: -190px;
+	cursor: pointer;
+}
+/**/
+.contact_wrap{
+	height: 230px;
+	width: 100%;
+}
+.contact_list{
+	width: 200px;
+	margin: 80px 0 0 50px;
+	float: left;
+}
+.contact_list li{
+	font-size: 14px;
+	color: #777;
+	margin-bottom: 10px;
+}
+.contact_list li:hover{
+	color: #31A5E7;
+	cursor: pointer;
+}
+.contact_list li.contact_title{
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+}
+.contact_list li.contact_title:hover{
+	color: black;
+	cursor: text;
+}
+.phone_wrap{
+	width: 200px;
+	float: right;
+	margin: 80px 50px 0 0;
+	text-align: right;
+}
+.phone_wrap h1{
+	margin: 10px 0;
+}
+.phone_wrap div{
+	width: 165px;
+	height: 40px;
+	background: #3DB1FA;
+	color: white;
+	line-height: 40px;
+	float: right;
+}
+.phone_wrap div>*{
+	float: right;
+}
+.phone_wrap div>img{
+	margin-top: 10px;
+}
+
+/*底部样式*/
+footer{
+	height: 130px;
+	font-size: 14px;
+}
+.footer_content1{
+	width: 1000px;
+	height: 50px;
+	margin: 50px auto 10px;
+	line-height: 50px;
+}
+.footer_content1>div{
+	float: left;
+	margin-right: 30px;
+}
+.footer_innerlink a{
+	margin: 0 10px;
+}
+.footer_service>*{
+	margin: 0 10px;
+}
+.footer_service>a{
+	background: #32A5E7;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+}
+.footer_outerlink{
+	margin-top: 9px;
+}
+.footer_outerlink i{
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+	background: url(img/login/base.png) no-repeat;
+}
+.footer_outerlink i.weibo{
+	background-position: -218px -91px;
+}
+.footer_outerlink i.weixin{
+	background-position: -302px -91px;
+}
+.footer_outerlink i.qzone{
+	background-position: -344px -91px;
+}
+.footer_content2{
+	width: 1000px;
+	margin: 0 auto;
+}

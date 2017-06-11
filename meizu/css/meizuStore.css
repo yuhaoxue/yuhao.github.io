@@ -1,0 +1,310 @@
+/*网页头部*/
+.header_box{
+	height: 120px;
+	width: 100%;
+}
+/*导航、轮播*/
+.nav_box{
+	height: 480px;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.nav_box>ul{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.nav_box>ul li{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+.nav_box>ul li img{
+	margin-left: -250px;
+}
+.nav_wrap{
+	width: 245px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	z-index: 50;
+	background: transparent;
+	background-color: rgba(255,255,255,0.5);
+}
+.nav_title{
+	width: 100%;
+}
+.nav_title li{
+	width: 245px;
+	height: 55px;
+	text-align: left;
+	line-height: 55px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.nav_title li:first-child{
+	margin-top: 10px;
+}
+.nav_title li:hover{
+	background: white;
+}
+.nav_menu{
+	height: 100%;
+	position: absolute;
+	z-index: 50;
+	left: 295px;
+	top: 0;
+}
+.nav_menu ul{
+	height: 100%;
+	position: relative;
+}
+.nav_menu ul li{
+	height: 100%;
+	width: 580px;
+	background: #CCCCCC;
+	position: absolute;
+	display: none;
+}
+.nav_menu ul li:hover{
+	display: block !important;
+}
+.menu_left{
+	height: 100%;
+	width: 340px;
+	margin-right: 10px;
+	padding: 0 20px;
+	background: white;
+	float: left;
+}
+.menu_left h5{
+	margin: 30px 0 0 0;
+}
+.menu_left h5+hr{
+	margin-top: 5px;
+}
+.row img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.row img+span{
+	font-size: 12px;
+	cursor: pointer;
+}
+.row img+a{
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.row img+span:hover{
+	color: #1E90FF;
+}
+.row img+a:hover{
+	color: #1E90FF;
+}
+.menu_right{
+	height: 100%;
+	width: 220px;
+	float: left;
+}
+.menu_right div{
+	height: 221px;
+	width: 220px;
+	margin-top: 10px;
+}
+.move_btn{
+	width: 1050px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -30px;
+	z-index: 40;
+}
+.move_btn>div{
+	width: 30px;
+	height: 60px;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	background: transparent;
+	background-color: rgba(0,0,0,0.1);
+}
+.move_btn>div:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+.move_btn .left_btn{
+	float: left;
+}
+.move_btn .right_btn{
+	float: right;
+}
+.move_icon{
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	z-index: 40;
+	bottom: 10px;
+}
+.move_icon ul{
+	height: 8px;
+	width: 100px;
+	margin: 6px auto;
+}
+.move_icon ul li{
+	height: 8px;
+	width: 8px;
+	float: left;
+	border: 1px solid #BDBDBD;
+	border-radius: 100%;
+	margin: 0 5px;
+}
+.move_icon ul li.icon_now{
+	background: #00c3c5;
+	border-color: #00c3c5;
+}
+
+/*主体内容*/
+.content_box{
+	height: 140px;
+	width: 1240px;
+	margin: 10px auto;
+}
+.content_box ul{
+	height: 100%;
+	width: 100%;
+}
+.content_box ul li{
+	height: 100%;
+	width: 243px;
+	margin-right: 5px;
+	float: left;
+	background: #F9F9F9;
+}
+.content_box ul li:first-child a{
+	display: block;
+	width: 120px;
+	height: 70px;
+	float: left;
+	text-align: center;
+}
+.content_box ul li:first-child a img{
+	margin: 10px 45px 0;
+	
+}
+/*热品推荐*/
+.recommend{
+	height: 390px;
+	width: 1240px;
+	margin: 40px auto 20px;
+	overflow: hidden;
+	position: relative;
+}
+.recommend>h2 span{
+	border: 1px solid;
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	text-align: center;
+	line-height: 25px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.recommend>h2 span.btn_now{
+	opacity: 0.3;
+}
+.recommend_box{
+	height: 300px;
+	width: 200%;
+	position: absolute;
+}
+.recommend_box li{
+	height: 300px;
+	width: 50%;
+	float: left;
+}
+.recommend_box li div{
+	height: 300px;
+	width: 248px;
+	border: 1px solid #EFEFEF;
+	float: left;
+	text-align: center;
+}
+.recommend_box li div:hover{
+	border-color: #ccc;
+}
+.recommend_box li div span{
+	color: red;
+}
+/*广告*/
+.ad{
+	width: 1240px;
+	height: 120px;
+	margin: 20px auto;
+}
+
+.gray_box{
+	width: 100%;
+	background: #F5F5F5;
+	padding: 30px 0;
+}
+/*手机，热销机型*/
+.phone{
+	width: 1240px;
+	margin: 0 auto;
+}
+.phone>h2 small{
+	color: dodgerblue;
+	margin-left: 20px;
+	border-bottom: 2px solid dodgerblue;
+}
+.phone ul{
+	width: 100%;
+}
+.phone ul li{
+	width: 100%;
+	height: 338px;
+	margin-bottom: 5px;
+}
+.phone ul li div{
+	width: 244px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	background: white;
+	margin-right: 5px;
+}
+.phone ul li div:last-child{
+	margin-right: 0;
+}
+.phone ul li div img{
+	margin-top: 30px;
+}
+.phone ul li div.phone_title img{
+	margin-top: 0;
+}
+.phone ul li div:hover{
+	box-shadow: 0 10px 10px #E5E5E5;
+	position: relative;
+	top: -3px;
+}
+.phone ul li div.phone_title:hover{
+	box-shadow: 0 0 0 white;
+	top: 0;
+}
+
+/*底部*/
+.footer_box{
+	height: 430px;
+	width: 100%;
+}

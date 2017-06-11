@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>魅族用户登录</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<style>
+			header{
+				height: 68px;
+				width: 1200px;
+				margin:0 auto;
+				line-height: 68px;
+			}
+			section{
+				height: 750px;
+				background: url(img/login/banner.png) no-repeat;
+				background-size: 100% 100%;
+				position: relative;
+			}
+			.login_box{
+				width: 300px;
+				height: 400px;
+				background: white;
+				position: absolute;
+				right: 150px;
+				top: 100px;
+				padding: 35px 35px 10px;
+			}
+			.tab_title{
+				font-size: 18px;
+				text-align: center;
+				color: #7f7f7f;
+				margin-bottom: 50px;
+			}
+			.tab_title a{
+				color: #7f7f7f;
+			}
+			.tab_title a.now_btn{
+				color: #32A5E7;
+			}
+			.tab_title span{
+				margin: 0 30px;
+			}
+			.user_input input{
+				width: 276px;
+				height: 46px;
+				padding: 0 10px;
+			}
+			.tip{
+				height:20px;
+			}
+			.tip p{
+				font-size: 12px;
+				display: none;
+				opacity: 0.6;
+			}
+			.tip p.vali_fail{
+				color: red;
+				display: block;
+			}
+			.input_test{
+				height: 35px;
+			}
+			.input_test img{
+				float: right;
+				height: 34px;
+			}
+			.input_test input{
+				width: 180px;
+				height: 30px;
+				padding: 0 10px;
+			}
+			.login{
+				margin-top: 40px;
+			}
+			.login a{
+				width: 300px;
+				height: 46px;
+				display: block;
+				background: #32A5E7;
+				text-align: center;
+				line-height: 46px;
+				color: white;
+			}
+			.newuser{
+				margin-top: 10px;
+				font-size: 14px;
+			}
+			.newuser a{
+				color: #32A5E7;
+			}
+			.newuser a:last-child{
+				float: right;
+			}
+			footer{
+				height: 130px;
+				font-size: 14px;
+			}
+			.footer_content1{
+				width: 1000px;
+				height: 50px;
+				margin: 50px auto 10px;
+				line-height: 50px;
+			}
+			.footer_content1>div{
+				float: left;
+				margin-right: 30px;
+			}
+			.footer_innerlink a{
+				margin: 0 10px;
+			}
+			.footer_service>*{
+				margin: 0 10px;
+			}
+			.footer_service>a{
+				background: #32A5E7;
+				color: white;
+				padding: 5px;
+				border-radius: 4px;
+			}
+			.footer_outerlink{
+				margin-top: 9px;
+			}
+			.footer_outerlink i{
+				display: block;
+				float: left;
+				width: 32px;
+				height: 32px;
+				margin-right: 10px;
+				background: url(img/login/base.png) no-repeat;
+			}
+			.footer_outerlink i.weibo{
+				background-position: -218px -91px;
+			}
+			.footer_outerlink i.weixin{
+				background-position: -302px -91px;
+			}
+			.footer_outerlink i.qzone{
+				background-position: -344px -91px;
+			}
+			.footer_content2{
+				width: 1000px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/index/logo-new-toggle_294da7f.png"/>
+		</header>
+		<section>
+			<form class="login_box">
+				<div class="tab_title">
+					<a href="" class="now_btn">账号登录</a>
+					<span>|</span>
+					<a href="">验证码登录</a>
+				</div>
+				<div class="user_input">
+					<input type="text" name="phone" placeholder="手机号" onfocus="getFocus(this)" onblur="valiName(this)"/>
+					<div class="tip"><p>用户名错误</p></div>
+					<input type="password" name="password" placeholder="密码" onfocus="getFocus(this)" onblur="valiPsw(this)"/>
+					<div class="tip"><p>密码错误</p></div>
+				</div>
+				<div class="input_test">
+					<input type="text" placeholder="验证码"/>
+					<img src="img/login/validatecode.png"/>
+				</div>
+				<div class="login">
+					<a href="">登录</a>
+				</div>
+				<div class="newuser">
+					<a href="">注册</a>
+					<a href="">忘记密码？</a>
+				</div>
+			</form>
+		</section>
+		<footer>
+			<div class="footer_content1">
+				<div class="footer_innerlink">
+					<a href="">关于魅族</a>|<a href="">工作机会</a>|<a href="">联系我们</a>|<a href="">法律声明</a>|<a href="">常见问题</a>|<a href="">简体中文</a>
+				</div>
+				<div class="footer_service">
+					<span>客服热线</span>
+					<span>400-788-3333</span>
+					<a href="">在线客服</a>
+				</div>
+				<div class="footer_outerlink">
+					<i class="weibo"></i>
+					<i class="weixin"></i>
+					<i class="qzone"></i>
+				</div>
+			</div>
+			<div class="footer_content2">
+				©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.备案号: 粤ICP备13003602号-4经营许可证编号: 粤B2-20130198营业执照
+			</div>
+		</footer>
+		
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			var flag = false;
+			var login = $(".login a");
+			function valiName(txt){
+				return vali(txt,/^18620357732$/);
+			}
+			function valiPsw(txt){
+				return vali(txt,/^123456$/);
+			}
+			function vali(txt,reg){
+				var msgTip = $(txt).next(".tip").find("p");
+				console.log($(txt).val());
+				if(reg.test($(txt).val())){
+					flag = true;
+					msgTip.removeClass("vali_fail");
+				}else{
+					msgTip.addClass("vali_fail");
+					flag = false;
+				}
+				//验证通过登录
+				if(flag){
+					login.attr("href","meizuIndex.html");
+				}
+			}
+			function getFocus(txt){
+				$(txt).next(".tip").find("p").removeClass("vali_fail");
+			}
+			
+		</script>
+	</body>
+</html>
