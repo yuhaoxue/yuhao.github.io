@@ -1,0 +1,413 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+ul{
+	list-style: none;
+}
+i{
+	display: inline-block;
+	font-style: normal;
+}
+img{
+	border: none;
+}
+/*header css start*/
+header{
+	width: 100%;
+	position: fixed;
+	background: #fff;
+	top: 0;
+	z-index: 999;
+}
+.head_title{
+	height: 0.88rem;
+	line-height: 0.88rem;
+	color: #f57f17;
+	text-align: center;
+	font-size: 0.3rem;
+	position: relative;
+	border-bottom: 1px solid #dfdfdf;
+}
+.btn_prev{
+	width: 0.19rem;
+	height: 0.36rem;
+	position: absolute;
+	top: 50%;
+	left: 0.2rem;
+	margin-top: -0.18rem;
+	line-height: 0.36rem;
+}
+.icon_prev{
+	width: 0.19rem;
+	height: 0.36rem;
+	background: url(../images/icon-prev.png) no-repeat center center;
+	background-size: 0.19rem 0.34rem;
+}
+.search_box{
+	height: 0.7rem;
+	background: #f1f1f1;
+	font-size: 0.26rem;
+	vertical-align: middle;
+	padding-top: 0.08rem;
+}
+.search_box form{
+	position: relative;
+}
+.icon_search{
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../images/icon-search.png) no-repeat center center;
+	background-size: 0.28rem 0.28rem;
+	position: absolute;
+	top: 50%;
+	left: 0.46rem;
+	margin-top: -0.14rem;
+}
+.variety{
+	width: 4.06rem;
+	height: 0.6rem;
+	margin-left: 0.2rem;
+	padding-left: 0.68rem;
+	border: 1px solid #DFDFDF;
+	border-radius: 0.06rem;
+}
+.btn_search{
+	width: 1rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	color: #fff;
+	background: #4cb050;
+	float: right;
+	margin-right: 0.22rem;
+	margin-left: 0.18rem;
+	margin-top: 1px;
+	border-radius: 0.06rem;
+}
+/*header css end*/
+
+/*section css start*/
+section{
+	margin-bottom: 0.6rem;
+}
+/*行情价格 start*/
+.main_marketPrice{
+	margin-top: 1.68rem;
+	font-size: 0.28rem;
+}
+table{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	text-align: center;
+}
+td{
+	border: none;
+}
+tr{
+	height: 0.6rem;
+}
+tr.tab_head,tr.format{
+	border-bottom: 1px solid #DFDFDF;
+}
+tr.format{
+	height: 0.5rem;
+	font-size: 0.26rem;
+	color: #999999;
+}
+tr.tab_head{
+	height: 0.8rem;
+}
+i.icon_sequence{
+	width: 0.12rem;
+	height: 0.16rem;
+	margin-left: 0.1rem;
+	background: url(../images/icon-sequence.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+i.icon_default{
+	width: 0.12rem;
+	height: 0.16rem;
+	margin-left: 0.1rem;
+	background: url(../images/icon_default.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+i.icon_up_down{
+	width: 0.12rem;
+	height: 0.16rem;
+	margin-left: 0.1rem;
+	background: url(../images/icon-up-down.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+tr td:first-child{
+	width: 30%;
+}
+tr td:last-child{
+	width: 20%;
+}
+tr td:first-child,tr td:last-child{
+	padding-left: 0.4rem;
+	text-align: left;
+}
+tr td:nth-child(2){
+	width: 40%;
+	margin: 0 auto;
+}
+td.up{
+	color: #f86f69;
+}
+td.down{
+	color: #4caf50;
+}
+i.icon_up{
+	width: 0.1rem;
+	height: 0.19rem;
+	margin-left: 0.12rem;
+	background: url(../images/icon-up.png) no-repeat;
+	background-size: 0.1rem 0.19rem;
+}
+i.icon_down{
+	width: 0.1rem;
+	height: 0.19rem;
+	margin-left: 0.12rem;
+	background: url(../images/icon-down.png) no-repeat;
+	background-size: 0.1rem 0.19rem;
+}
+/*行情价格 end*/
+/*行情头条 start*/
+.null_box{
+	height: 0.1rem;
+	background: #f1f1f1;
+}
+.main_marketHeadline{
+	margin-top: 1rem;
+	font-size: 0.3rem;
+}
+.content_list{
+	height: 2rem;
+	border-bottom: 0.04rem solid #f1f1f1;
+	position: relative;
+}
+.content_list a{
+	height: 100%;
+}
+.content_text{
+	height: 100%;
+	margin-right: 2.7rem;
+	margin-left: 0.3rem;
+	position: relative;
+}
+.content_msg{
+	color: #222222;
+}
+.content_remark{
+	font-size: 0.24rem;
+	color: #999999;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0.2rem;
+}
+.content_remark span{
+	float: right;
+}
+.content_remark span.date{
+	float: left;
+}
+.content_img{
+	width: 2.2rem;
+	height: 1.8rem;
+	margin: 0.1rem 0.22rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #666666;
+}
+.content_img img{
+	width: 2.2rem;
+	height: 1.8rem;
+}
+/*行情头条 end*/
+/*行情详情 start*/
+.btn_share{
+	font-size: 0.3rem;
+	position: absolute;
+	color: #f57f17;
+	right: 0.2rem;
+	top: 0;
+}
+.main_marketDetails{
+	margin-top: 0.88rem;
+	font-size: 0.26rem;
+}
+.goods_description{
+	height: 1.2rem;
+	border-bottom: 1px solid #dfdfdf;
+	position: relative;
+}
+.goods_msg{
+	height: 100%;
+	font-size: 0.28rem;
+	margin-left: 0.2rem;
+	padding-top: 0.1rem;
+}
+.goods_name{
+	color: #222222;
+}
+.goods_msg .goods_place,.goods_msg .goods_format{
+	font-size: 0.24rem;
+	color: #666666;
+}
+.goods_msg .goods_format{
+	color: #999999;
+}
+.btn_follow{
+	width: 1rem;
+	height: 0.56rem;
+	text-align: center;
+	line-height: 0.56rem;
+	font-size: 0.26rem;
+	color: #fff;
+	background: #4CB050;
+	position: absolute;
+	right: 0.24rem;
+	top: 50%;
+	margin-top: -0.28rem;
+	border-radius: 0.06rem;
+}
+.goods_price{
+	height: 1.4rem;
+	padding-left: 0.2rem;
+	padding-top: 0.22rem;
+	margin-bottom: 0.08rem;
+	border-bottom: 1px solid #dfdfdf;
+	color: #222222;
+}
+.todayPrice{
+	font-size: 0.24rem;
+}
+.price_now{
+	font-size: 0.26rem;
+}
+.price_now .price_num{
+	font-size: 0.4rem;
+}
+.spread{
+	color: #666;
+}
+.spread i{
+	margin-right: 0.14rem;
+}
+.spread .spread_up{
+	color: #f86f69;
+}
+.spread .spread_down{
+	color: #4CB050;
+}
+.day_spread{
+	margin-right: 0.26rem;
+}
+.trendList{
+	height: 0.7rem;
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #dfdfdf;
+}
+.trendList li{
+	width: 1.86rem;
+	height: 100%;
+	text-align: center;
+	line-height: 0.7rem;
+	float: left;
+	border-right: 1px solid #dfdfdf;
+}
+.trendList li.trend_active{
+	height: 0.66rem;
+	border-bottom: 4px solid #f57f17;
+}
+#trendChart{
+	border-bottom: 1px solid #dfdfdf;
+}
+.merchant_tab_title{
+	height: 0.7rem;
+	text-align: center;
+	line-height: 0.7rem;
+	color: #F57F17;
+}
+.merchant_tab tr{
+	height: 0.9rem;
+}
+.merchant_tab tr td{
+	width: 35%;
+	word-break: break-all;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+}
+.merchant_tab tr.tab_head{
+	height: 0.8rem;
+}
+.merchant_tab tr td:last-child{
+	padding-left: 0;
+	padding-right: 0.2rem;
+	text-align: center;
+	width: 30%;
+}
+/*行情详情 end*/
+/*行情中心 start*/
+.head_title .switchover{
+	font-size: 0.25rem;
+}
+.link_box{
+	height: 1.8rem;
+	font-size: 0.26rem;
+	border-bottom: 0.1rem solid #f1f1f1;
+}
+.link_box ul{
+	height: 100%;
+}
+.link_box li{
+	float: left;
+	width: 33%;
+	text-align: center;
+	margin-top: 0.28rem;
+}
+.link_box li a{
+	color: #222222;
+}
+.link_box li img{
+	width: 0.8rem;
+}
+.main_marketCenter{
+	margin-top: 2.78rem;
+	font-size: 0.28rem;
+}
+.tab_title{
+	height: 0.7rem;
+	text-align: center;
+	font-size: 0.3rem;
+	line-height: 0.7rem;
+	color: #F57F17;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+/*行情中心 end*/
+/*section css end*/
+
+/*footer css start*/
+footer{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border-top: 1px solid #DFDFDF;
+	position: fixed;
+	background: #fff;
+	text-align: center;
+	bottom: 0;
+	font-size: 0.24rem;
+	color: #4caf50;
+}
+/*footer css end*/

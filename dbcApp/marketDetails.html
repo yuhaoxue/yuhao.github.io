@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>行情详情</title>
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+		<!--WebApp全屏模式   隐藏地址栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--苹果强制全屏显示-->
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<!--强制全屏显示-->
+		<meta name="full-screen" content="yes"/>
+		<!--制定iphone中safari顶端的状态条的样式（default:白色，black:黑色，black-translucent：半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<script src="js/responsive.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="head_title">
+				<a class="btn_prev" href="marketPrice.html"><i class="icon_prev"></i></a>
+				<p>无籽西瓜</p>
+				<a class="btn_share" href="">分享</a>
+			</div>
+		</header>
+		<section>
+			<div class="main_marketDetails">
+				<div class="goods_description">
+					<div class="goods_msg">
+						<p class="goods_name">无籽西瓜</p>
+						<p class="goods_place">产地：成都市</p>
+						<p class="goods_format">规格：单果重6斤，无籽西瓜，皮薄</p>
+					</div>
+					<a class="btn_follow" href="">关注</a>
+				</div>
+				<div class="goods_price">
+					<p class="todayPrice">今日价格</p>
+					<p class="price_now"><span class="price_num">12.96</span>元/斤</p>
+					<p class="spread">
+						日<span class="day_spread spread_down"><i class="icon_down"></i>0.30元</span>
+						周<span class="week_spread spread_up"><i class="icon_up"></i>0.53</span>
+					</p>
+				</div>
+				<div class="price_trend">
+					<ul class="trendList">
+						<li class="trend_active"><span>近7日趋势</span></li>
+						<li><span>近30日趋势</span></li>
+						<li><span>近60天趋势</span></li>
+					</ul>
+					<div id="trendChart" style="min-height: 4rem;"></div>
+				</div>
+				<div class="merchant_tab">
+					<p class="merchant_tab_title">经营商户列表</p>
+					<table>
+						<tr class="tab_head">
+							<td>商户名称</td>
+							<td>所在市场</td>
+							<td>档位号</td>
+						</tr>
+						<tr>
+							<td>文峰贸易商行</td>
+							<td>深圳海吉星</td>
+							<td>A1001</td>
+						</tr>
+						<tr>
+							<td>文峰贸易商行</td>
+							<td>深圳海吉星</td>
+							<td>A1001</td>
+						</tr>
+						<tr>
+							<td>文峰贸易商行</td>
+							<td>深圳海吉星</td>
+							<td>A1001</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<footer>行情信息与数据来源于中农数据</footer>
+		<script type="text/javascript" src="js/lib/LAB.min.js"></script>
+		<script type="text/javascript" src="js/lib/config.js"></script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<script type="text/javascript">
+			$LAB
+				.script("js/marketDetails.js");
+		</script>
+	</body>
+</html>
