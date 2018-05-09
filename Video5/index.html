@@ -5,6 +5,9 @@
 <title>video5.0</title>
 <link href="css/video-js.min.css" rel="stylesheet">
 <script src="js/video.min.js"></script>
+<script>
+    videojs.options.flash.swf = "js/video-js.swf";
+</script>
 </head>
 
 <body>
@@ -14,13 +17,12 @@
  preload="auto" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png"
  data-setup='{}'>
  	<source src="video/test.mp4" type='video/mp4' />
-	<source src="video/test.webm" type='video/webm'>
-    <source src="video/test.ogg" type='video/ogg'>
-  <p class="vjs-no-js">
-    To view this video please enable JavaScript, and consider upgrading to a web browser
-    that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-  </p>
 </video>
-
+<script>
+	debugger;
+    if (navigator.userAgent.indexOf('MSIE') >= 0){
+        document.getElementById("really-cool-video").innerHTML='<embed src="video/test.mp4" autostart="true" loop="true" width="640" height="264" >';
+    }
+ </script>
 </body>
 </html>
